@@ -1,0 +1,28 @@
+body,
+html {
+    width: 100vw;
+}
+img {
+    width: 100%;
+}
+#thumbnailSlider {
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    #mainImg {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .thumbnails {
+        display: flex;
+        transition: transform 0.3s;
+        .thumbnailWrapper {
+            min-width: 250px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    button:last-of-type {
+        float: right;
+    }
+}
